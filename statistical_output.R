@@ -5,7 +5,6 @@ rank_lineplot <- ggplot(data = player_data) + geom_line(mapping = aes(x = player
 numberofaces_boxplot <- ggplot(data = player_data) + geom_boxplot(mapping = aes(x = "", y = player_ace)) + coord_flip() + ggtitle("The number of aces Federer has in a game")
 firstservepointswonperyear_histogram <- ggplot(player_data, aes(x = player_1stWon)) + geom_histogram(position = "stack") + ggtitle("1st Points Histogram")
 
-print(test_lineplot)
 print(gamelength_boxplot)
 print(rank_lineplot)
 print(numberofaces_boxplot)
